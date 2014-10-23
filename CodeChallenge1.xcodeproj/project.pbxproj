@@ -14,6 +14,7 @@
 		FA96329519F9A02900D9CB05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA96329419F9A02900D9CB05 /* Images.xcassets */; };
 		FA96329819F9A02900D9CB05 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA96329619F9A02900D9CB05 /* LaunchScreen.xib */; };
 		FA9632A419F9A02900D9CB05 /* CodeChallenge1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9632A319F9A02900D9CB05 /* CodeChallenge1Tests.m */; };
+		FAF9D1AD19F9AAA5005A6751 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9D1AC19F9AAA5005A6751 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FA96329D19F9A02900D9CB05 /* CodeChallenge1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeChallenge1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9632A219F9A02900D9CB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9632A319F9A02900D9CB05 /* CodeChallenge1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeChallenge1Tests.m; sourceTree = "<group>"; };
+		FAF9D1AB19F9AAA5005A6751 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		FAF9D1AC19F9AAA5005A6751 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				FA96328C19F9A02900D9CB05 /* AppDelegate.m */,
 				FA96328E19F9A02900D9CB05 /* ViewController.h */,
 				FA96328F19F9A02900D9CB05 /* ViewController.m */,
+				FAF9D1AB19F9AAA5005A6751 /* WebViewController.h */,
+				FAF9D1AC19F9AAA5005A6751 /* WebViewController.m */,
 				FA96329119F9A02900D9CB05 /* Main.storyboard */,
 				FA96329419F9A02900D9CB05 /* Images.xcassets */,
 				FA96329619F9A02900D9CB05 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				FA96329019F9A02900D9CB05 /* ViewController.m in Sources */,
 				FA96328D19F9A02900D9CB05 /* AppDelegate.m in Sources */,
 				FA96328A19F9A02900D9CB05 /* main.m in Sources */,
+				FAF9D1AD19F9AAA5005A6751 /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 				FA9632A919F9A02900D9CB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA9632AA19F9A02900D9CB05 /* Build configuration list for PBXNativeTarget "CodeChallenge1Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				FA9632AC19F9A02900D9CB05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

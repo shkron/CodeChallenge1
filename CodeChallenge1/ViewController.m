@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "WebViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *firstMultiplier;
+@property (weak, nonatomic) IBOutlet UITextField *secondMultiplier;
+@property (weak, nonatomic) IBOutlet UIButton *webButton;
+@property (strong, nonatomic) NSString *resultString;
 
 @end
 
@@ -16,12 +21,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.webButton.enabled = NO;
+
+
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    UIViewController *vc = segue.destinationViewController;
+    vc.title = self.resultString;
+}
+
+- (IBAction)calculateButton:(UIButton *)sender {
+
+    int firstNumber = [self.firstMultiplier.text intValue];
+    int secondNumber = [self.secondMultiplier.text intValue];
+    int result = firstNumber * secondNumber;
+    self.resultString = [NSString stringWithFormat:@"%i",result];
+    self.title = self.resultString;
+    [self.view endEditing:YES];
+    if ((result % 5) == 0)
+    {
+        self.webButton.enabled = YES;
+    } else
+    {
+        self.webButton.enabled = NO;
+    }
+
+
+
 }
 
 @end
